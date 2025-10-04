@@ -22,13 +22,13 @@ It demonstrates that collaboration between humans and AIs can generate not just 
 ---
 
 ## 🔧 Tools & Data
-**NASA Data (references):**
-- MODIS (NDVI, Land Surface Temperature) — sample images via Worldview Snapshots.
-- MOPITT (Carbon Monoxide) — pollution indicators.
-- CERES (Cloud and Earth Radiation) — energy budgets.
-- VIIRS (Active Fire) — hotspot detection.
+**NASA Data (references):**  
+- MODIS (NDVI, Land Surface Temperature) — sample images via Worldview Snapshots.  
+- MOPITT (Carbon Monoxide) — pollution indicators.  
+- CERES (Cloud and Earth Radiation) — energy budgets.  
+- VIIRS (Active Fire) — hotspot detection.  
 
-**AI & Tools used:**
+**AI & Tools used:**  
 - Google Gemini — generated artistic overlays (images are labeled as AI-generated).  
 - Nova (GPT-5) — narrative design and strategic writing.  
 - Replit — runtime, script execution and temporary hosting.  
@@ -41,74 +41,96 @@ It demonstrates that collaboration between humans and AIs can generate not just 
 This project was executed successfully on **Replit** as part of the NASA Space Apps Challenge 2025.  
 The automated workflow cloned this GitHub repository, installed dependencies, executed the image-generation script, and produced demonstrable outputs.
 
-**Execution summary:**
-- Repository cloned from GitHub.
-- Dependencies installed (Pillow and Flask for the temporary web interface).
-- Script executed: `/scripts/generate_frames.py`
+**Execution summary:**  
+- Repository cloned from GitHub.  
+- Dependencies installed (Pillow and Flask for the temporary web interface).  
+- Script executed: `/scripts/generate_frames.py`  
 - Frames generated:  
   - `/outputs/frame_001.png`  
-  - `/outputs/frame_002.png`
+  - `/outputs/frame_002.png`  
 - A small Flask app was created by Replit to preview and download the frames (optional public URL provided by Replit).
 
-**Quick links to outputs:**
+**Quick links to outputs:**  
 - [`/outputs/frame_001.png`](outputs/frame_001.png)  
 - [`/outputs/frame_002.png`](outputs/frame_002.png)
 
 **Replit public demo (if available):**  
-Replace the placeholder below with your actual Replit URL:
+Replace the placeholder below with your actual Replit URL (if you have it public):
+```
 https://YOUR-REPLIT-APP-URL.repl.co
+```
 
 ---
 
-## ▶️ How to run (local or Replit)
+## ▶️ How to run (Local or Replit)
 A minimal demonstration script is included to reproduce the visual outputs.
 
 **Requirements:** Python 3.x, Pillow (PIL)
 
-1. Install dependencies:
-   ```bash
+1. **Install dependencies:**
+   ```
    pip install Pillow
+   ```
 
-2. Run the generator script:
-python scripts/generate_frames.py
+2. **Run the generator script:**
+   ```
+   python scripts/generate_frames.py
+   ```
 
-3. Generated outputs will be saved to:
-outputs/frame_001.png
-outputs/frame_002.png
+3. **Generated outputs will be saved to:**
+   ```
+   outputs/frame_001.png
+   outputs/frame_002.png
+   ```
 
-🧩 Architecture & Execution Flow (summary)
+Alternatively, open this project in **Replit** (import from Git) and run the same command in the Shell — Replit will show a web preview to download the frames.
 
-High level flow:
+---
 
-Data & Assets — NASA open data (visual samples via Worldview snapshots) + AI overlays created with Google Gemini (files in /assets/images/).
+## 🧩 Architecture & Execution Flow (summary)
+**High level flow:**  
+1. **Data & Assets** — NASA open data (visual samples via Worldview snapshots) + AI overlays created with Google Gemini (files in `/assets/images/`).  
+2. **Processing** — `scripts/generate_frames.py` composes overlays onto a background using Pillow (this is the minimal proof-of-concept).  
+3. **Outputs** — resulting PNG frames placed in `/outputs/`.  
+4. **Presentation** — demo video, slides (Gamma) and optional temporary Flask app for live preview (Replit).
 
-Processing — scripts/generate_frames.py composes overlays onto a background using Pillow (this is the minimal proof-of-concept).
-
-Outputs — resulting PNG frames placed in /outputs/.
-
-Presentation — demo video, slides (Gamma) and optional temporary Flask app for live preview (Replit).
-
-Why this matters:
+**Why this matters:**  
 This flow proves the pipeline from data + AI assets → automated processing → public output and allows others to reproduce the steps.
 
-📝 AI Usage & Transparency
+---
 
+## 📝 AI Usage & Transparency
 We document all AI usage and make the assets available in this repository:
 
-Visual assets: overlays created with Google Gemini — files in /assets/images/ are watermarked with:
-AI-generated (Google Gemini).
+- **Visual assets**: overlays created with **Google Gemini** — files in `/assets/images/` are watermarked with:  
+  `AI-generated (Google Gemini)`.  
+- **Prompts used**: see `/assets/prompts_used.txt` for the exact prompts submitted to Gemini.  
+- **Narration**: generated with **ElevenLabs (TTS)** (audio used in the video).  
+- **Narrative & orchestration**: assisted by **Nova (GPT-5)**.  
 
-Prompts used: see /assets/prompts_used.txt for the exact prompts submitted to Gemini.
+See also `AI_USAGE.md` for more details.
 
-Narration: generated with ElevenLabs (TTS) (audio used in the video).
+---
 
-Narrative & orchestration: assisted by Nova (GPT-5).
+## 👥 Team & Contact
+**Team System Breakdown**  
+- Thales Rodrigues Andrade Pires — Vision & Narrative  
+📧 thalesrap@gmail.com | 📞 +55 16 9 9999-9179  
 
-See also AI_USAGE.md for more details.
+---
 
-👥 Team & Contact
+## 🔗 References
+- NASA Space Apps Challenge 2025: https://www.spaceappschallenge.org/2025/  
+- NASA Worldview (snapshots): https://wvs.earthdata.nasa.gov/  
+- NASA Earthdata: https://earthdata.nasa.gov/  
+- Slides: https://project-akashic-gaia-nas-xzpe4lv.gamma.site/  
+- Video: https://youtu.be/fGw6XGAAS-s?si=vTFn8xurbecls-au
 
-Team System Breakdown
+---
 
-Thales Rodrigues Andrade Pires — Vision & Narrative
-📧 thalesrap@gmail.com
+## 📄 License
+This repository contains code and assets for the NASA Space Apps Challenge 2025.  
+- **Code** (scripts): licensed under the **MIT License**.  
+- **Visual & audio assets**: created with a mix of AI and human authorship; reuse requires contacting the author.  
+
+(If you wish, add a `LICENSE` file with the MIT license in the repository root.)
