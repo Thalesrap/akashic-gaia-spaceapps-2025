@@ -65,18 +65,3 @@ A minimal demonstration script is included to reproduce the visual outputs.
 1. Install dependencies:
 ```bash
 pip install Pillow
-
-## 📝 AI Use & Credits
-Some images and artistic overlays were generated with AI (Google Gemini). Per submission rules, AI-generated visuals are labelled with watermark and documented here.
-
----
-
-## 👥 Team & Contact
-**Team System Breakdown**  
-- Thales Rodrigues Andrade Pires — Vision & Narrative  
-Contact: thalesrap@gmail.com | +55 16 9 9999-9179
-
----
-
-## 🔗 More
-This project was developed for the NASA Space Apps Challenge 2025. For more information see the slide deck and demo video above.
