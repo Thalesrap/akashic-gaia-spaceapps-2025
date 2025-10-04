@@ -53,15 +53,4 @@ This project was executed successfully on **Replit** as part of the NASA Space A
 - [`/outputs/frame_001.png`](outputs/frame_001.png)  
 - [`/outputs/frame_002.png`](outputs/frame_002.png)
 
-*(If available)* Replit public demo: `https://YOUR-REPLIT-APP-URL.repl.co`  ← replace with your Replit URL if you want the judges to access the live interface.
-
----
-
-## ▶️ How to run (local or Replit)
-A minimal demonstration script is included to reproduce the visual outputs.
-
-**Requirements:** Python 3.x, Pillow (PIL)
-
-1. Install dependencies:
-```bash
-pip install Pillow
+**Replit public demo (if available):** Replace the placeholder below with the actual Replit URL:
