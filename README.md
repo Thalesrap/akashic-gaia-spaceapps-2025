@@ -57,7 +57,7 @@ The automated workflow cloned this GitHub repository, installed dependencies, ex
 **Replit public demo (if available):**  
 Replace the placeholder below with your actual Replit URL (if you have it public):
 ```
-https://akashicgaia-gen-thalexrap.replit.app
+- **Slides / Project Site:** https://akashicgaia-gen-thalexrap.replit.app
 ```
 
 ---
