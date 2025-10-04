@@ -6,10 +6,10 @@
 
 ## 🚀 Project Overview
 Akashic Gaia is a poetic, scientific, and artistic experience built upon 25 years of NASA’s Terra satellite data.  
-Our mission is to transform open data — vegetation, temperature, pollution, and fire activity — into a **Cartography of Collapse**: a living map of Earth’s memory.  
+Our mission is to transform open data — vegetation, temperature, pollution, and fire activity — into a **Cartography of Collapse**: a living map of Earth’s memory.
 
 By merging data science, artificial intelligence, and storytelling, Akashic Gaia reveals invisible planetary patterns and makes them emotionally accessible.  
-It demonstrates that collaboration between humans and AIs can generate not just information, but wisdom.  
+It demonstrates that collaboration between humans and AIs can generate not just information, but wisdom.
 
 ---
 
@@ -18,22 +18,53 @@ It demonstrates that collaboration between humans and AIs can generate not just 
 - **Slides / Project Site:** https://project-akashic-gaia-nas-xzpe4lv.gamma.site/
 
 (Click the video link above to watch the official demo.)
+
 ---
 
 ## 🔧 Tools & Data
-**NASA Data:**  
-- MODIS (NDVI, LST)  
-- MOPITT (CO: pollution)  
-- CERES (radiation balance)  
-- VIIRS (active fire)  
+**NASA Data (references):**
+- MODIS (NDVI, Land Surface Temperature) — sample images via Worldview Snapshots.
+- MOPITT (Carbon Monoxide) — pollution indicators.
+- CERES (Cloud and Earth Radiation) — energy budgets.
+- VIIRS (Active Fire) — hotspot detection.
 
-**AI & Tools used:**  
-- Google Gemini (visual generation) — images labelled as AI-generated.  
-- Nova (GPT-5) — narrative and strategy.  
-- Replit — code & prototype hosting.  
-- ElevenLabs (TTS) — narration.
+**AI & Tools used:**
+- Google Gemini — generated artistic overlays (images are labeled as AI-generated).  
+- Nova (GPT-5) — narrative design and strategic writing.  
+- Replit — runtime, script execution and temporary hosting.  
+- Pillow (PIL) — image processing (used in `scripts/generate_frames.py`).  
+- ElevenLabs (TTS) — narration used in the demo video.
 
 ---
+
+## 🌌 Proof of Execution (Prova de Execução)
+This project was executed successfully on **Replit** as part of the NASA Space Apps Challenge 2025. The automated workflow cloned this GitHub repository, installed dependencies, executed the image-generation script, and produced demonstrable outputs.
+
+**Execution summary:**
+- Repository cloned from GitHub.
+- Dependencies installed (Pillow and Flask for the temporary web interface).
+- Script executed: `/scripts/generate_frames.py`
+- Frames generated:  
+  - `/outputs/frame_001.png`  
+  - `/outputs/frame_002.png`
+- A small Flask app was created by Replit to preview and download the frames (optional public URL provided by Replit).
+
+**Quick links to outputs:**
+- [`/outputs/frame_001.png`](outputs/frame_001.png)  
+- [`/outputs/frame_002.png`](outputs/frame_002.png)
+
+*(If available)* Replit public demo: `https://YOUR-REPLIT-APP-URL.repl.co`  ← replace with your Replit URL if you want the judges to access the live interface.
+
+---
+
+## ▶️ How to run (local or Replit)
+A minimal demonstration script is included to reproduce the visual outputs.
+
+**Requirements:** Python 3.x, Pillow (PIL)
+
+1. Install dependencies:
+```bash
+pip install Pillow
 
 ## 📝 AI Use & Credits
 Some images and artistic overlays were generated with AI (Google Gemini). Per submission rules, AI-generated visuals are labelled with watermark and documented here.
