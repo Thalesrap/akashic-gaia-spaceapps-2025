@@ -54,11 +54,17 @@ The automated workflow cloned this GitHub repository, installed dependencies, ex
 - [`/outputs/frame_001.png`](outputs/frame_001.png)  
 - [`/outputs/frame_002.png`](outputs/frame_002.png)
 
-**Replit public demo (if available):**  
-Replace the placeholder below with your actual Replit URL (if you have it public):
-```
-- **Slides / Project Site:** https://akashicgaia-gen-thalexrap.replit.app
-```
+---
+
+## 🌐 Live Demo (Interactive Replit App)
+
+[![Run Akashic Gaia on Replit](https://img.shields.io/badge/🚀_Launch_on_Replit-0A0A0A?style=for-the-badge&logo=replit&logoColor=white)](https://akashicgaia-gen-thalexrap.replit.app)
+
+Click the badge above to launch the **interactive demo** of *Akashic Gaia* hosted on Replit.  
+Explore the generated frames and witness Earth’s data transformed into living memory.
+
+---
+
 
 ---
 
